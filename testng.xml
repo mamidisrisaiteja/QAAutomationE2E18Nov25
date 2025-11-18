@@ -1,0 +1,16 @@
+<suite name="automation" parallel="tests" thread-count="2">
+    <test name="chrome-test">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="runners.TestRunner"/>
+        </classes>
+    </test>
+    <test name="firefox-test">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="runners.TestRunner"/>
+        </classes>
+    </test>
+
+
+</suite>
