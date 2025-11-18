@@ -19,12 +19,6 @@ public class TestStepDef {
         loginPage = new LoginPage(driver);  // Write code here that turns the phrase above into concrete actions
        driver.get("https://www.saucedemo.com/");
     }
-//    @When("I login with username <string> and password <string>")
-//
-//    public void i_login_with_username_standard_user_and_password_secret_sauce(String userName,String password) {
-//        // Write code here that turns the phrase above into concrete actions
-//
-//    }
 
     @When("I login with username {string} and password {string}")
     public void iLoginWithUsernameUserNameAndPasswordPassword(String userName,String password) {
